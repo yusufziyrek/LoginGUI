@@ -80,8 +80,8 @@ public class MainClass {
 
 					} else {
 						String password = new String(fieldP.getPassword());
-						writer = new FileWriter(file);
-						writer.write("Username : " + fieldA.getText() + "\nPassword : " + password);
+						writer = new FileWriter(file, true);
+						writer.write("Username : " + fieldA.getText() + "\nPassword : " + password + "\n-----------\n");
 						writer.close();
 					}
 				} catch (IOException e1) {
